@@ -39,6 +39,9 @@ int main(int argc, const char * argv[]) {
         NSString *str = [array1 objectAtIndex:3];
         NSLog(@"str = %@",str);
         
+        // 对应元素的下标,如果元素不存在则返回－1
+        int index = (int)[array1 indexOfObject:@"3"];
+        NSLog(@"index = %d",index);
     }
     return 0;
 }
