@@ -31,6 +31,13 @@ int main(int argc, const char * argv[]) {
         NSString *last = [array1 lastObject];
         NSLog(@"Last obect = %@",last);
         
+        // 取得数组中第一个元素
+        NSString *first = [array1 firstObject];
+        NSLog(@"First object = %@",first);
+        
+        // 取出指定位置的元素
+        NSString *str = [array1 objectAtIndex:3];
+        NSLog(@"str = %@",str);
         
     }
     return 0;
