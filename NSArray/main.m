@@ -42,6 +42,11 @@ int main(int argc, const char * argv[]) {
         // 对应元素的下标,如果元素不存在则返回－1
         int index = (int)[array1 indexOfObject:@"3"];
         NSLog(@"index = %d",index);
+        
+        // 数组的遍历
+        // 1.通过数组的下标逐一取出查看
+        // 2.通过快速枚举 for in
+        // 3.使用枚举器
     }
     return 0;
 }
