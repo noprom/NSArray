@@ -47,6 +47,12 @@ int main(int argc, const char * argv[]) {
         // 1.通过数组的下标逐一取出查看
         // 2.通过快速枚举 for in
         // 3.使用枚举器
+        
+        // 1.逐一取值
+        for(int i = 0; i<array1.count; ++i){
+            NSString *str1 = [array1 objectAtIndex:i];
+            NSLog(@"str%d = %@",i,str1);
+        }
     }
     return 0;
 }
