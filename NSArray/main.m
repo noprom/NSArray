@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -47,12 +48,24 @@ int main(int argc, const char * argv[]) {
         // 1.通过数组的下标逐一取出查看
         // 2.通过快速枚举 for in
         // 3.使用枚举器
+        Person *p = [[Person alloc]init];
+        p.personName = @"张三";
+
+//        添加对象数组
+        NSArray *array2 = [[NSArray alloc]initWithObjects:@"a",@"b",p,@"c", nil];
         
         // 1.逐一取值
         for(int i = 0; i<array1.count; ++i){
             NSString *str1 = [array1 objectAtIndex:i];
             NSLog(@"str%d = %@",i,str1);
         }
+        
+        // 2.快速枚举，需要让数组中的元素的类型保持一致
+        for(NSString *str2 in array2){
+            NSLog(@"str2 = %@",str2);
+        }
+        
+        
     }
     return 0;
 }
